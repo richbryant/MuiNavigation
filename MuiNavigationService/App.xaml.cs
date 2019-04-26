@@ -2,6 +2,7 @@
 using Prism.Ioc;
 using Prism.Modularity;
 using System.Windows;
+using MuiNavigationService.Services;
 
 namespace MuiNavigationService
 {
@@ -17,7 +18,7 @@ namespace MuiNavigationService
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-
+            containerRegistry.Register<ICustomerService, CustomerService>();
         }
     }
 }
