@@ -1,11 +1,22 @@
-﻿using MuiNavigationService.Models;
+﻿using System;
+using System.Linq;
+using FirstFloor.ModernUI.Windows.Navigation;
+using MuiNavigationService.Models;
+using MuiNavigationService.Services;
 
 namespace MuiNavigationService.ViewModels
 {
     public class CustomerDetailsViewModel : ViewModelBase
     {
-        private readonly Customer _customer;
-        private readonly Customer _referenceCopy;
+        private Customer _customer = new Customer();
+        private Customer _referenceCopy;
+        private readonly ICustomerService _customerService;
+
+        public CustomerDetailsViewModel(ICustomerService customerService)
+        {
+            _customerService = customerService;
+        }
+
 
         public CustomerDetailsViewModel(Customer data)
         {
@@ -74,5 +85,24 @@ namespace MuiNavigationService.ViewModels
         }
 
         public bool Dirty => _referenceCopy.Equals(_customer);
+
+        private void Load(int id)
+        {
+            if (_customerService != null)
+            {
+                var data = _customerService.Get().First(x => x.Id == id);
+                _customer = data;
+                _referenceCopy = data.Clone() as Customer;
+            }
+            
+        }
+
+        public override void OnFragmentNavigation(FragmentNavigationEventArgs e)
+        {
+            if (int.TryParse(e.Fragment, out int id))
+            {
+                Load(id);
+            }
+        }
     }
 }

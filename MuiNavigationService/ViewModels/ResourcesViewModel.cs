@@ -11,14 +11,7 @@ namespace MuiNavigationService.ViewModels
     public class ResourcesViewModel : ViewModelBase
     {
         public ResourcesViewModel()
-        {
-            NavigatingFromCommand = new DelegateCommand(NavigatingFrom);
-            NavigatedFromCommand = new DelegateCommand(NavigatedFrom);
-            NavigatedToCommand = new DelegateCommand(NavigatedTo);
-            FragmentNavigationCommand = new DelegateCommand(FragmentNavigation);
-            LoadedCommand = new DelegateCommand(LoadData);
-            IsVisibleChangedCommand = new DelegateCommand(VisibilityChanged);
-        }
+        {}
 
         private void VisibilityChanged()
         {

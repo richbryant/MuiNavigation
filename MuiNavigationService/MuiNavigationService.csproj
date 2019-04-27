@@ -58,8 +58,6 @@
     </ApplicationDefinition>
     <Compile Include="Models\Cloneable.cs" />
     <Compile Include="Models\Customer.cs" />
-    <Compile Include="Navigation\INavigationService.cs" />
-    <Compile Include="Navigation\NavigationService.cs" />
     <Compile Include="Services\ICustomerService.cs" />
     <Compile Include="Services\CustomerService.cs" />
     <Compile Include="ViewModels\CustomerDetailsViewModel.cs" />

@@ -6,38 +6,29 @@ namespace MuiNavigationService.Controls
 {
     public class MuiControl : UserControl, IContent
     {
-        public void OnFragmentNavigation(FragmentNavigationEventArgs e)
+        public virtual void OnFragmentNavigation(FragmentNavigationEventArgs e)
         {
-            FragmentNavigation?.Invoke(this, e);
+            var viewModel = DataContext as IContent;
+            viewModel?.OnFragmentNavigation(e);
         }
 
-        public void OnNavigatedFrom(NavigationEventArgs e)
+        public virtual void OnNavigatedFrom(NavigationEventArgs e)
         {
-            NavigatedFrom?.Invoke(this, e);
+            var viewModel = DataContext as IContent;
+            viewModel?.OnNavigatedFrom(e);
         }
 
-        public void OnNavigatedTo(NavigationEventArgs e)
+        public virtual void OnNavigatedTo(NavigationEventArgs e)
         {
-            NavigatedTo?.Invoke(this, e);
+            var viewModel = DataContext as IContent;
+            viewModel?.OnNavigatedTo(e);
         }
 
-        public void OnNavigatingFrom(NavigatingCancelEventArgs e)
+        public virtual void OnNavigatingFrom(NavigatingCancelEventArgs e)
         {
-            NavigatingFrom?.Invoke(this, e);
+            var viewModel = DataContext as IContent;
+            viewModel?.OnNavigatingFrom(e);
         }
 
-        public event NavigatingCancelHandler NavigatingFrom;
-
-        public event NavigationEventHandler NavigatedFrom;
-
-        public event NavigationEventHandler NavigatedTo;
-
-        public event FragmentNavigationHandler FragmentNavigation;
-
-        public delegate void NavigatingCancelHandler(object sender, NavigatingCancelEventArgs e);
-
-        public delegate void NavigationEventHandler(object sender, NavigationEventArgs e);
-
-        public delegate void FragmentNavigationHandler(object sender, FragmentNavigationEventArgs e);
     }
 }

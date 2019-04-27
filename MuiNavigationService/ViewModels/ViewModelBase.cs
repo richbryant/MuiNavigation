@@ -1,26 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
-using Prism.Commands;
+using FirstFloor.ModernUI.Windows;
+using FirstFloor.ModernUI.Windows.Navigation;
 using Prism.Mvvm;
 
 namespace MuiNavigationService.ViewModels
 {
-    public abstract class ViewModelBase : BindableBase
+    public abstract class ViewModelBase : BindableBase, IContent
     {
-        public DelegateCommand NavigatingFromCommand { get; set; }
+        public virtual void OnFragmentNavigation(FragmentNavigationEventArgs e)
+        {
+            
+        }
 
-        public DelegateCommand NavigatedFromCommand { get; set; }
+        public virtual void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            
+        }
 
-        public DelegateCommand NavigatedToCommand { get; set; }
+        public virtual void OnNavigatedTo(NavigationEventArgs e)
+        {
+            
+        }
 
-        public DelegateCommand FragmentNavigationCommand { get; set; }
-
-        public DelegateCommand LoadedCommand { get; set; }
-
-        public DelegateCommand IsVisibleChangedCommand { get; set; }
+        public virtual void OnNavigatingFrom(NavigatingCancelEventArgs e)
+        {
+            
+        }
     }
 }
