@@ -93,6 +93,12 @@ namespace MuiNavigationService.ViewModels
                 var data = _customerService.Get().First(x => x.Id == id);
                 _customer = data;
                 _referenceCopy = data.Clone() as Customer;
+                RaisePropertyChanged(nameof(Id));
+                RaisePropertyChanged(nameof(FirstName));
+                RaisePropertyChanged(nameof(LastName));
+                RaisePropertyChanged(nameof(Email));
+                RaisePropertyChanged(nameof(IsMember));
+                RaisePropertyChanged(nameof(Status));
             }
             
         }
