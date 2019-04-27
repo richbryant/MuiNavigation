@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using System.Diagnostics;
 using MuiNavigationService.Models;
 using MuiNavigationService.Services;
 
@@ -17,6 +18,11 @@ namespace MuiNavigationService.ViewModels
         {
             get => _customers;
             set => SetProperty(ref _customers, value);
+        }
+
+        private void FragmentNavigation()
+        {
+            Debug.WriteLine("ResourcesViewModel - FragmentNavigation");
         }
     }
 }
