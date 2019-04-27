@@ -1,5 +1,4 @@
-﻿using System.Windows.Controls;
-using MuiNavigationService.Controls;
+﻿using MuiNavigationService.Controls;
 
 namespace MuiNavigationService.Views
 {

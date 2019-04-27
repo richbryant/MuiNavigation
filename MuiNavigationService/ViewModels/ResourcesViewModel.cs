@@ -1,10 +1,4 @@
-﻿using Prism.Commands;
-using Prism.Mvvm;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using FirstFloor.ModernUI.Presentation;
+﻿using System.Diagnostics;
 
 namespace MuiNavigationService.ViewModels
 {

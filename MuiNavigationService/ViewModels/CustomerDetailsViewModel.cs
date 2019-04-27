@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using FirstFloor.ModernUI.Windows.Navigation;
 using MuiNavigationService.Models;
 using MuiNavigationService.Services;

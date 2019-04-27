@@ -1,5 +1,4 @@
-﻿using System;
-using FirstFloor.ModernUI.Windows;
+﻿using FirstFloor.ModernUI.Windows;
 using FirstFloor.ModernUI.Windows.Navigation;
 using Prism.Mvvm;
 
