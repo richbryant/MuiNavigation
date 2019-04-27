@@ -31,7 +31,11 @@ namespace MuiNavigationService.ViewModels
         public Customer Selected
         {
             get => _selected;
-            set => SetProperty(ref _selected, value);
+            set
+            {
+                SetProperty(ref _selected, value);
+                RaisePropertyChanged($"NavigateTarget");
+            }
         }
 
         private void FragmentNavigation()

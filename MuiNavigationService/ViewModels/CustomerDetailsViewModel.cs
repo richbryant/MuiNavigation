@@ -99,7 +99,7 @@ namespace MuiNavigationService.ViewModels
 
         public override void OnFragmentNavigation(FragmentNavigationEventArgs e)
         {
-            if (int.TryParse(e.Fragment, out int id))
+            if (int.TryParse(e.Fragment.Replace("Id=", ""), out var id))
             {
                 Load(id);
             }
