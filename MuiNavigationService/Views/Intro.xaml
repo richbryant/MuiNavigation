@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              xmlns:controls="clr-namespace:MuiPrismNavigation.Controls"
              d:DesignHeight="300"
              d:DesignWidth="600" 
@@ -16,7 +15,8 @@
             <StackPanel >
                 <TextBlock Text="Prism &amp; ModernUI" Style="{StaticResource Heading1}" Margin="0,0,0,8"/>
                 <mui:BBCodeBlock BBCode="[b]Prism Library[/b] is a framework for building loosely coupled, maintainable, and testable XAML applications in WPF, Windows 10 UWP, and Xamarin Forms: [url=https://github.com/PrismLibrary/Prism]visit website[/url]" Margin="0,0,0,24" />
-                <mui:BBCodeBlock BBCode="[b]Modern UI for WPF (MUI)[/b] is a set of controls and styles converting your WPF application into a great looking Modern UI app: [url=https://github.com/firstfloorsoftware/mui]visit website[/url]" Margin="0,0,0,24" /> 
+                <mui:BBCodeBlock BBCode="[b]Modern UI for WPF (MUI)[/b] is a set of controls and styles converting your WPF application into basically the old Zune app.  Which I like. [url=https://github.com/firstfloorsoftware/mui]visit website[/url]" Margin="0,0,0,24" /> 
+                <mui:BBCodeBlock BBCode="[b]This app[/b] is about getting the good bits of Prism and the good bits of ModernUI.  It includes navigation via double-click on an object that still triggers the correct menu position, dynamically creating your menu and how to bind to Navigation Events in the ViewModel."></mui:BBCodeBlock>
             </StackPanel>
         </ScrollViewer>
     </Grid>
