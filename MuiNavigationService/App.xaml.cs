@@ -1,9 +1,9 @@
-﻿using MuiNavigationService.Views;
-using Prism.Ioc;
+﻿using Prism.Ioc;
 using System.Windows;
-using MuiNavigationService.Services;
+using MuiPrismNavigation.Services;
+using MuiPrismNavigation.Views;
 
-namespace MuiNavigationService
+namespace MuiPrismNavigation
 {
     /// <summary>
     /// Interaction logic for App.xaml

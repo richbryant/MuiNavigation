@@ -1,8 +1,8 @@
-﻿<prism:PrismApplication x:Class="MuiNavigationService.App"
+﻿<prism:PrismApplication x:Class="MuiPrismNavigation.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	     xmlns:prism="http://prismlibrary.com/"
-             xmlns:local="clr-namespace:MuiNavigationService">
+             xmlns:local="clr-namespace:MuiPrismNavigation">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

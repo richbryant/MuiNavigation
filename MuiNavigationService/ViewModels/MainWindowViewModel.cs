@@ -1,6 +1,6 @@
 ﻿using Prism.Mvvm;
 
-namespace MuiNavigationService.ViewModels
+namespace MuiPrismNavigation.ViewModels
 {
     public class MainWindowViewModel : BindableBase
     {

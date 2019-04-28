@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-using MuiNavigationService.Models;
-using MuiNavigationService.Services;
+using MuiPrismNavigation.Models;
+using MuiPrismNavigation.Services;
 using Prism.Commands;
 
-namespace MuiNavigationService.ViewModels
+namespace MuiPrismNavigation.ViewModels
 {
     public class CustomerListViewModel : ViewModelBase
     {

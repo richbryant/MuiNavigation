@@ -1,9 +1,9 @@
 ﻿using System.Linq;
 using FirstFloor.ModernUI.Windows.Navigation;
-using MuiNavigationService.Models;
-using MuiNavigationService.Services;
+using MuiPrismNavigation.Models;
+using MuiPrismNavigation.Services;
 
-namespace MuiNavigationService.ViewModels
+namespace MuiPrismNavigation.ViewModels
 {
     public class CustomerDetailsViewModel : ViewModelBase
     {

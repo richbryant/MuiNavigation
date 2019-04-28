@@ -7,8 +7,8 @@
     <ProjectGuid>{308A5E6C-3732-443C-B13F-C9A5CBAD1926}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MuiNavigationService</RootNamespace>
-    <AssemblyName>MuiNavigationService</AssemblyName>
+    <RootNamespace>MuiPrismNavigation</RootNamespace>
+    <AssemblyName>MuiPrismNavigation</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -63,7 +63,7 @@
     <Compile Include="ViewModels\CustomerDetailsViewModel.cs" />
     <Compile Include="ViewModels\CustomerListViewModel.cs" />
     <Compile Include="ViewModels\ResourcesViewModel.cs" />
-    <Compile Include="ViewModels\StepsViewModel.cs" />
+    <Compile Include="ViewModels\IntroViewModel.cs" />
     <Compile Include="Views\CustomerDetails.xaml.cs">
       <DependentUpon>CustomerDetails.xaml</DependentUpon>
     </Compile>
@@ -73,8 +73,8 @@
     <Compile Include="Views\Resources.xaml.cs">
       <DependentUpon>Resources.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Steps.xaml.cs">
-      <DependentUpon>Steps.xaml</DependentUpon>
+    <Compile Include="Views\Intro.xaml.cs">
+      <DependentUpon>Intro.xaml</DependentUpon>
     </Compile>
     <Page Include="Custom.xaml">
       <SubType>Designer</SubType>
@@ -107,7 +107,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Steps.xaml">
+    <Page Include="Views\Intro.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

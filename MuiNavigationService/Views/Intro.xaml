@@ -1,0 +1,23 @@
+﻿<controls:MuiControl x:Class="MuiPrismNavigation.Views.Steps"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:controls="clr-namespace:MuiPrismNavigation.Controls"
+             d:DesignHeight="300"
+             d:DesignWidth="600" 
+             mc:Ignorable="d" 
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <Grid Style="{StaticResource ContentRoot}" MaxWidth="{StaticResource ViewMaxWidth}" HorizontalAlignment="Left">
+        <ScrollViewer>
+            <StackPanel >
+                <TextBlock Text="Prism &amp; ModernUI" Style="{StaticResource Heading1}" Margin="0,0,0,8"/>
+                <mui:BBCodeBlock BBCode="[b]Prism Library[/b] is a framework for building loosely coupled, maintainable, and testable XAML applications in WPF, Windows 10 UWP, and Xamarin Forms: [url=https://github.com/PrismLibrary/Prism]visit website[/url]" Margin="0,0,0,24" />
+                <mui:BBCodeBlock BBCode="[b]Modern UI for WPF (MUI)[/b] is a set of controls and styles converting your WPF application into a great looking Modern UI app: [url=https://github.com/firstfloorsoftware/mui]visit website[/url]" Margin="0,0,0,24" /> 
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</controls:MuiControl>

@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace MuiNavigationService.ViewModels
+namespace MuiPrismNavigation.ViewModels
 {
     public class ResourcesViewModel : ViewModelBase
     {

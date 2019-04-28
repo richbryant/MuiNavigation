@@ -1,6 +1,6 @@
 ﻿using FirstFloor.ModernUI.Windows.Controls;
 
-namespace MuiNavigationService.Views
+namespace MuiPrismNavigation.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

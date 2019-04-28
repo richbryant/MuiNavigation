@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using System.Windows.Navigation;
-using MuiNavigationService.Controls;
+using MuiPrismNavigation.Controls;
 
-namespace MuiNavigationService.Views
+namespace MuiPrismNavigation.Views
 {
     /// <summary>
     /// Interaction logic for Resources
