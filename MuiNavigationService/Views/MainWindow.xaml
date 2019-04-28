@@ -15,7 +15,6 @@
             <mui:LinkGroup.Links>
                 <mui:Link DisplayName="Steps" Source="/Views/Steps.xaml" />
                 <mui:Link DisplayName="Customers" Source="/Views/CustomerList.xaml" />
-                <mui:Link DisplayName="Details" Source="/Views/CustomerDetails.xaml"/>
             </mui:LinkGroup.Links>
         </mui:LinkGroup>
     </mui:ModernWindow.MenuLinkGroups>
