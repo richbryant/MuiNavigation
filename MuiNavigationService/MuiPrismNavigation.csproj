@@ -62,7 +62,6 @@
     <Compile Include="Services\CustomerService.cs" />
     <Compile Include="ViewModels\CustomerDetailsViewModel.cs" />
     <Compile Include="ViewModels\CustomerListViewModel.cs" />
-    <Compile Include="ViewModels\ResourcesViewModel.cs" />
     <Compile Include="ViewModels\IntroViewModel.cs" />
     <Compile Include="Views\CustomerDetails.xaml.cs">
       <DependentUpon>CustomerDetails.xaml</DependentUpon>

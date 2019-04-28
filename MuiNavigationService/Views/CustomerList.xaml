@@ -11,7 +11,7 @@
     <Grid Style="{StaticResource ContentRoot}" MaxWidth="{StaticResource ViewMaxWidth}" HorizontalAlignment="Left">
         <Grid.Resources>
             <!--Create list of enumeration values-->
-            <ObjectDataProvider x:Key="myEnum" MethodName="GetValues" ObjectType="{x:Type core:Enum}">
+            <ObjectDataProvider x:Key="MyEnum" MethodName="GetValues" ObjectType="{x:Type core:Enum}">
                 <ObjectDataProvider.MethodParameters>
                     <x:Type Type="model:OrderStatus"/>
                 </ObjectDataProvider.MethodParameters>
@@ -26,7 +26,7 @@
                     <mui:DataGridTextColumn Header="Last Name" Binding="{Binding LastName}" IsReadOnly="True"/>
                     <mui:DataGridTextColumn Header="Email" Binding="{Binding Email}"/>
                     <mui:DataGridCheckBoxColumn Header="Is Member" Binding="{Binding IsMember}" />
-                    <mui:DataGridComboBoxColumn Header="Order Status" SelectedItemBinding="{Binding Status}" ItemsSource="{Binding Source={StaticResource myEnum}}" />
+                    <mui:DataGridComboBoxColumn Header="Order Status" SelectedItemBinding="{Binding Status}" ItemsSource="{Binding Source={StaticResource MyEnum}}" />
                 </DataGrid.Columns>
                 <DataGrid.InputBindings>
                     <MouseBinding MouseAction="LeftDoubleClick"

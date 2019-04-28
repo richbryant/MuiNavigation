@@ -38,11 +38,6 @@ namespace MuiPrismNavigation.ViewModels
             }
         }
 
-        private void FragmentNavigation()
-        {
-            Debug.WriteLine("ResourcesViewModel - FragmentNavigation");
-        }
-
         private void GridClick(Customer customer)
         {
             Debug.WriteLine("Got clicked");

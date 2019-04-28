@@ -32,9 +32,9 @@
 
                 <Label Content="First Name" />
                 <TextBox Text="{Binding FirstName, Mode=TwoWay, ValidatesOnDataErrors=True, ValidatesOnNotifyDataErrors=True, ValidatesOnExceptions=True}" Grid.Column="1" Grid.Row="0" />
-                <Label Content="Email" Grid.Row="1" />
+                <Label Content="Email" Grid.Row="1" Grid.Column="0" />
                 <TextBox Text="{Binding Email, Mode=TwoWay, ValidatesOnDataErrors=True, ValidatesOnNotifyDataErrors=True, ValidatesOnExceptions=True}" Grid.Column="1" Grid.Row="1" />
-                <Label Content="Status" Grid.Row="2" />
+                <Label Content="Status" Grid.Row="2" Grid.Column="0" />
                 <TextBox Text="{Binding Status, Mode=TwoWay, ValidatesOnDataErrors=True, ValidatesOnNotifyDataErrors=True, ValidatesOnExceptions=True}" Grid.Column="1" Grid.Row="2" />
             </Grid>
             <Grid Grid.Column="1">
@@ -49,7 +49,7 @@
 
                 <Label Content="Last Name" />
                 <TextBox Text="{Binding LastName, Mode=TwoWay, ValidatesOnDataErrors=True, ValidatesOnNotifyDataErrors=True, ValidatesOnExceptions=True}" Grid.Column="1" Grid.Row="0" />
-                <Label Content="Is Member" Grid.Row="1" />
+                <Label Content="Is Member" Grid.Row="1" Grid.Column="0" />
                 <CheckBox IsChecked="{Binding IsMember, Mode=TwoWay}" Grid.Column="1" Grid.Row="1" />
             </Grid>
         </Grid>
