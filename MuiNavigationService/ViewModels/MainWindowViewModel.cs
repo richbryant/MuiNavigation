@@ -1,4 +1,6 @@
-﻿namespace MuiPrismNavigation.ViewModels
+﻿using Core.ViewModels;
+
+namespace MuiPrismNavigation.ViewModels
 {
     public class MainWindowViewModel : ViewModelBase
     {

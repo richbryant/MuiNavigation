@@ -11,11 +11,11 @@
     </mui:ModernWindow.TitleLinks>
 
     <mui:ModernWindow.MenuLinkGroups>
-        <mui:LinkGroup DisplayName="Home">
+        <!--<mui:LinkGroup DisplayName="Home">
             <mui:LinkGroup.Links>
                 <mui:Link DisplayName="Intro"  Source="/Views/Intro.xaml" />
-                <mui:Link DisplayName="Customers" Source="/Views/CustomerList.xaml" />
+                <mui:Link DisplayName="Customers" Source="/../Customer/Views/CustomerList.xaml" />
             </mui:LinkGroup.Links>
-        </mui:LinkGroup>
+        </mui:LinkGroup>-->
     </mui:ModernWindow.MenuLinkGroups>
 </mui:ModernWindow>

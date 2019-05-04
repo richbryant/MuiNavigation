@@ -2,7 +2,7 @@
 using FirstFloor.ModernUI.Windows;
 using FirstFloor.ModernUI.Windows.Navigation;
 
-namespace MuiPrismNavigation.Controls
+namespace Core.Controls
 {
     public class MuiControl : UserControl, IContent
     {

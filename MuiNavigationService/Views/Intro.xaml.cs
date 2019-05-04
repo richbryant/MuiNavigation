@@ -1,13 +1,13 @@
-﻿using MuiPrismNavigation.Controls;
+﻿using Core.Controls;
 
 namespace MuiPrismNavigation.Views
 {
     /// <summary>
     /// Interaction logic for Steps
     /// </summary>
-    public partial class Steps : MuiControl
+    public partial class Intro 
     {
-        public Steps()
+        public Intro()
         {
             InitializeComponent();
         }

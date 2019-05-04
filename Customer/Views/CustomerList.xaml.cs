@@ -1,6 +1,6 @@
-﻿using MuiPrismNavigation.Controls;
+﻿using Core.Controls;
 
-namespace MuiPrismNavigation.Views
+namespace Customer.Views
 {
     /// <summary>
     /// Interaction logic for CustomerList

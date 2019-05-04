@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using Core.ViewModels;
 using MuiPrismNavigation.Models;
 using MuiPrismNavigation.Services;
 using Prism.Commands;

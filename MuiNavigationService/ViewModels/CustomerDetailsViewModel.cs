@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using Core.ViewModels;
 using FirstFloor.ModernUI.Windows.Navigation;
 using MuiPrismNavigation.Models;
 using MuiPrismNavigation.Services;

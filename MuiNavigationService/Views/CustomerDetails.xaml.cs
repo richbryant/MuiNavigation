@@ -1,4 +1,4 @@
-﻿using MuiPrismNavigation.Controls;
+﻿using Core.Controls;
 
 namespace MuiPrismNavigation.Views
 {

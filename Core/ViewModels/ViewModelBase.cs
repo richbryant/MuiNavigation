@@ -2,7 +2,7 @@
 using FirstFloor.ModernUI.Windows.Navigation;
 using Prism.Mvvm;
 
-namespace MuiPrismNavigation.ViewModels
+namespace Core.ViewModels
 {
     public abstract class ViewModelBase : BindableBase, IContent
     {
