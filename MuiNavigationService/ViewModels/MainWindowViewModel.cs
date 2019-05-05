@@ -39,6 +39,7 @@ namespace MuiPrismNavigation.ViewModels
             {
                 DisplayName = "Home"
             };
+
             group.Links.Add(new Link {DisplayName = "Home", Source = GetUri(typeof(Intro))});
             Menu.Add(group);
 
