@@ -1,7 +1,10 @@
 ﻿using Prism.Ioc;
 using System.Windows;
-using MuiPrismNavigation.Services;
+using Core.Models;
+using Core.Services;
+using Customer;
 using MuiPrismNavigation.Views;
+using Prism.Modularity;
 
 namespace MuiPrismNavigation
 {
@@ -13,6 +16,11 @@ namespace MuiPrismNavigation
         protected override Window CreateShell()
         {
             return Container.Resolve<MainWindow>();
+        }
+
+        protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
+        {
+            moduleCatalog.AddModule<CustomerModule>();
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)

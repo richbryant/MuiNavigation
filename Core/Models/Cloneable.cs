@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MuiPrismNavigation.Models
+namespace Core.Models
 {
     public abstract class AbstractCloneable : ICloneable
     {

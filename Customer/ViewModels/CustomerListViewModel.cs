@@ -1,35 +1,34 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using Core.Services;
 using Core.ViewModels;
-using MuiPrismNavigation.Models;
-using MuiPrismNavigation.Services;
 using Prism.Commands;
 
-namespace MuiPrismNavigation.ViewModels
+namespace Customer.ViewModels
 {
     public class CustomerListViewModel : ViewModelBase
     {
-        public DelegateCommand<Customer> MouseDoubleClickEvent { get; set; }
+        public DelegateCommand<Core.Models.Customer> MouseDoubleClickEvent { get; set; }
         public CustomerListViewModel(ICustomerService service)
         {
-            Customers = new ObservableCollection<Customer>();
+            Customers = new ObservableCollection<Core.Models.Customer>();
             Customers.AddRange(service.Get());
-            MouseDoubleClickEvent = new DelegateCommand<Customer>(GridClick);
+            MouseDoubleClickEvent = new DelegateCommand<Core.Models.Customer>(GridClick);
         }
 
-        private ObservableCollection<Customer> _customers;
+        private ObservableCollection<Core.Models.Customer> _customers;
         
 
-        public ObservableCollection<Customer> Customers
+        public ObservableCollection<Core.Models.Customer> Customers
         {
             get => _customers;
             set => SetProperty(ref _customers, value);
         }
 
-        private Customer _selected;
+        private Core.Models.Customer _selected;
 
-        public Customer Selected
+        public Core.Models.Customer Selected
         {
             get => _selected;
             set
@@ -39,13 +38,13 @@ namespace MuiPrismNavigation.ViewModels
             }
         }
 
-        private void GridClick(Customer customer)
+        private void GridClick(Core.Models.Customer customer)
         {
             Debug.WriteLine("Got clicked");
             Debug.WriteLine($"{customer.FirstName} {customer.LastName}");
 
         }
 
-        public Uri NavigateTarget => new Uri("/Views/CustomerDetails.xaml#Id=" + Selected?.Id, UriKind.Relative);
+        public Uri NavigateTarget => new Uri($"/Customer;component/Views/CustomerDetails.xaml#Id=" + Selected?.Id, UriKind.Relative);
     }
 }

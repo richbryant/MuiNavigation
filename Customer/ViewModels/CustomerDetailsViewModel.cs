@@ -1,15 +1,15 @@
 ﻿using System.Linq;
+using Core.Models;
+using Core.Services;
 using Core.ViewModels;
 using FirstFloor.ModernUI.Windows.Navigation;
-using MuiPrismNavigation.Models;
-using MuiPrismNavigation.Services;
 
 namespace MuiPrismNavigation.ViewModels
 {
     public class CustomerDetailsViewModel : ViewModelBase
     {
-        private Customer _customer = new Customer();
-        private Customer _referenceCopy;
+        private Core.Models.Customer _customer = new Core.Models.Customer();
+        private Core.Models.Customer _referenceCopy;
         private readonly ICustomerService _customerService;
 
         public CustomerDetailsViewModel(ICustomerService customerService)
@@ -18,10 +18,10 @@ namespace MuiPrismNavigation.ViewModels
         }
 
 
-        public CustomerDetailsViewModel(Customer data)
+        public CustomerDetailsViewModel(Core.Models.Customer data)
         {
             _customer = data;
-            _referenceCopy = data.Clone() as Customer;
+            _referenceCopy = data.Clone() as Core.Models.Customer;
         }
 
         public int Id
@@ -92,7 +92,7 @@ namespace MuiPrismNavigation.ViewModels
             {
                 var data = _customerService.Get().First(x => x.Id == id);
                 _customer = data;
-                _referenceCopy = data.Clone() as Customer;
+                _referenceCopy = data.Clone() as Core.Models.Customer;
                 RaisePropertyChanged(nameof(Id));
                 RaisePropertyChanged(nameof(FirstName));
                 RaisePropertyChanged(nameof(LastName));

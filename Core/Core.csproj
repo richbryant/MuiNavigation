@@ -51,6 +51,8 @@
   <ItemGroup>
     <Compile Include="Controls\MuiControl.cs" />
     <Compile Include="CoreModule.cs" />
+    <Compile Include="Models\Cloneable.cs" />
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -64,6 +66,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Services\CustomerService.cs" />
+    <Compile Include="Services\ICustomerService.cs" />
     <Compile Include="Services\IMenuService.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

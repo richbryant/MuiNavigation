@@ -56,24 +56,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Models\Cloneable.cs" />
-    <Compile Include="Models\Customer.cs" />
-    <Compile Include="Services\ICustomerService.cs" />
-    <Compile Include="Services\CustomerService.cs" />
-    <Compile Include="ViewModels\CustomerDetailsViewModel.cs" />
-    <Compile Include="ViewModels\CustomerListViewModel.cs" />
     <Compile Include="ViewModels\IntroViewModel.cs" />
-    <Compile Include="Views\CustomerDetails.xaml.cs">
-      <DependentUpon>CustomerDetails.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\Intro.xaml.cs">
       <DependentUpon>Intro.xaml</DependentUpon>
     </Compile>
     <Page Include="Custom.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\CustomerDetails.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -132,9 +119,11 @@
       <Project>{f3dd9033-d941-4d97-b030-13a7d1a5c3c4}</Project>
       <Name>Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Customer\Customer.csproj">
+      <Project>{f0e523e1-019c-4a84-80c4-3ed632465edd}</Project>
+      <Name>Customer</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controls\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

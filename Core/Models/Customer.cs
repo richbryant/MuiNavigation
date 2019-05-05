@@ -1,4 +1,4 @@
-﻿namespace MuiPrismNavigation.Models
+﻿namespace Core.Models
 {
     public enum OrderStatus { None, New, Processing, Shipped, Received };
 

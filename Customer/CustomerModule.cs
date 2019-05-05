@@ -1,10 +1,10 @@
 ﻿using System;
+using Core.Services;
 using Core.Services.Core.Services;
 using Customer.Views;
 using FirstFloor.ModernUI.Presentation;
 using Prism.Ioc;
 using Prism.Modularity;
-using Prism.Regions;
 
 namespace Customer
 {
@@ -20,12 +20,12 @@ namespace Customer
             linkGroup.Links.Add(new Link
             {
                 DisplayName = "Listing",
-                Source = new Uri($"/Customers;component/Views/{nameof(CustomerList)}.xaml", UriKind.Relative)
+                Source = new Uri($"/Customer;component/Views/{nameof(CustomerList)}.xaml", UriKind.Relative)
             });
             linkGroup.Links.Add(new Link
             {
                 DisplayName = "Something Else",
-                Source = new Uri($"/Customers;component/Views/{nameof(SomethingElse)}.xaml", UriKind.Relative)
+                Source = new Uri($"/Customer;component/Views/{nameof(SomethingElse)}.xaml", UriKind.Relative)
             });
 
             return linkGroup;
@@ -38,7 +38,7 @@ namespace Customer
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            
+            containerRegistry.Register<ICustomerService, CustomerService>();
         }
     }
 }

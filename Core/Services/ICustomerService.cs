@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using MuiPrismNavigation.Models;
+using Core.Models;
 
-namespace MuiPrismNavigation.Services
+namespace Core.Services
 {
     public interface ICustomerService
     {
